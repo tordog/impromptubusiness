@@ -1,58 +1,60 @@
 //
-//  ViewController.swift
+//  CreateDealViewController.swift
 //  Impromptu Business
 //
-//  Created by Torie Nielsen on 4/26/15.
+//  Created by Torie Nielsen on 4/29/15.
 //  Copyright (c) 2015 impromptu. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import Parse
 import CoreLocation
 
-class CreateProfileViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class CreateDealViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var company_name: UITextField!
+    @IBOutlet weak var lowestPrice: UITextField!
     
-    @IBOutlet weak var category: UITextField!
+    @IBOutlet weak var dealDescription: UITextView!
+   
+    @IBOutlet weak var dealName: UITextField!
     
-    @IBOutlet weak var location: UITextField!
+    @IBOutlet weak var startPrice: UITextField!
     
-    @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var originalPrice: UITextField!
     
+    @IBOutlet weak var startDate: UIDatePicker!
+    
+    @IBOutlet weak var endTime: UIDatePicker!
+    
+    @IBOutlet weak var quantity: UITextField!
+    
+    @IBAction func cancel(sender: AnyObject) {
+    self.performSegueWithIdentifier("createDealToHome", sender: self)
+    }
+    
+    @IBAction func createDeal(sender: AnyObject) {
+        let data: NSDictionary = [
+            "name": self.dealName.text,
+            "description": self.dealDescription.text,
+            "startPrice": self.startPrice.text,
+            "lowestPrice": self.lowestPrice.text,
+            "originalPrice": self.originalPrice.text,
+            "startDate": self.startDate.date,
+            "endTime": self.endTime.date,
+            "quantity": self.quantity.tag,
+            "photo": self.photoID
+        ]
+        
+    self.performSegueWithIdentifier("createDealToHome", sender: self)
+
+    }
     @IBOutlet weak var photo: UIImageView!
     
     var imagePicker = UIImagePickerController()
     var photoID = ""
     
-    @IBAction func createProfile(sender: AnyObject) {
-  
-        let address = location.text
-        
-        CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) -> Void in
-            
-            if error == nil {
-                let placemark = placemarks[0] as! CLPlacemark
-                let data: NSDictionary = [
-                    "location": [
-                        "latitude": placemark.location.coordinate.latitude,
-                        "longitude": placemark.location.coordinate.longitude
-                    ],
-                    "name": self.company_name.text,
-                    "category": self.category.text,
-                    "phone": self.phone.text,
-                    "photo": self.photoID,
-                    "address": address
-                ]
-            }
-        })
-        
-        self.performSegueWithIdentifier("backtoHome", sender: self)
-        
-    }
-    
     @IBAction func pick_photo(sender: AnyObject) {
-        println(company_name.text)
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
             println("Button capture")
             
@@ -64,8 +66,8 @@ class CreateProfileViewController: UIViewController, UINavigationControllerDeleg
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
     }
-
     
+
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         uploadImageParse(image)
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
@@ -120,5 +122,5 @@ class CreateProfileViewController: UIViewController, UINavigationControllerDeleg
             }
         })
     }
- }
+}
 

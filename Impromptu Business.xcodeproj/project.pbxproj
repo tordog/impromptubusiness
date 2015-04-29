@@ -57,6 +57,16 @@
 		D294D7D41AF0C67A006165FA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D294D7D31AF0C67A006165FA /* libsqlite3.dylib */; };
 		D2BC7AA41AF0CBA800174D3A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BC7AA31AF0CBA800174D3A /* Parse.framework */; };
 		D2BC7AA51AF0CBA800174D3A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BC7AA31AF0CBA800174D3A /* Parse.framework */; };
+		D2BC7AA71AF0DD9000174D3A /* CreateDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AA61AF0DD9000174D3A /* CreateDealViewController.swift */; };
+		D2BC7AA81AF0DD9000174D3A /* CreateDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AA61AF0DD9000174D3A /* CreateDealViewController.swift */; };
+		D2BC7AAA1AF0ED6000174D3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AA91AF0ED6000174D3A /* LoginViewController.swift */; };
+		D2BC7AAB1AF0ED6000174D3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AA91AF0ED6000174D3A /* LoginViewController.swift */; };
+		D2BC7AAD1AF0F08900174D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AAC1AF0F08900174D3A /* RegisterViewController.swift */; };
+		D2BC7AAE1AF0F08900174D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AAC1AF0F08900174D3A /* RegisterViewController.swift */; };
+		D2BC7AB01AF0F32900174D3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AAF1AF0F32900174D3A /* HomeViewController.swift */; };
+		D2BC7AB11AF0F32900174D3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AAF1AF0F32900174D3A /* HomeViewController.swift */; };
+		D2BC7AB31AF1076F00174D3A /* CurrentDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AB21AF1076F00174D3A /* CurrentDealsViewController.swift */; };
+		D2BC7AB41AF1076F00174D3A /* CurrentDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC7AB21AF1076F00174D3A /* CurrentDealsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +118,11 @@
 		D294D7D11AF0C671006165FA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D294D7D31AF0C67A006165FA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D2BC7AA31AF0CBA800174D3A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D2BC7AA61AF0DD9000174D3A /* CreateDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDealViewController.swift; sourceTree = "<group>"; };
+		D2BC7AA91AF0ED6000174D3A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2BC7AAC1AF0F08900174D3A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D2BC7AAF1AF0F32900174D3A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D2BC7AB21AF1076F00174D3A /* CurrentDealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentDealsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +196,11 @@
 				D203AC7B1AED5417006A08BB /* AppDelegate.swift */,
 				D203AC7D1AED5417006A08BB /* ViewController.swift */,
 				D294D7B31AF0AF95006165FA /* CreateProfileViewController.swift */,
+				D2BC7AA91AF0ED6000174D3A /* LoginViewController.swift */,
+				D2BC7AAC1AF0F08900174D3A /* RegisterViewController.swift */,
+				D2BC7AAF1AF0F32900174D3A /* HomeViewController.swift */,
+				D2BC7AB21AF1076F00174D3A /* CurrentDealsViewController.swift */,
+				D2BC7AA61AF0DD9000174D3A /* CreateDealViewController.swift */,
 				D203AC9B1AED54AA006A08BB /* image2.jpeg */,
 				D203AC7F1AED5417006A08BB /* Main.storyboard */,
 				D203ACB21AED6ED9006A08BB /* Cell.swift */,
@@ -350,8 +370,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BC7AB31AF1076F00174D3A /* CurrentDealsViewController.swift in Sources */,
+				D2BC7AAA1AF0ED6000174D3A /* LoginViewController.swift in Sources */,
 				D294D7B41AF0AF95006165FA /* CreateProfileViewController.swift in Sources */,
 				D203AC7E1AED5417006A08BB /* ViewController.swift in Sources */,
+				D2BC7AAD1AF0F08900174D3A /* RegisterViewController.swift in Sources */,
+				D2BC7AA71AF0DD9000174D3A /* CreateDealViewController.swift in Sources */,
+				D2BC7AB01AF0F32900174D3A /* HomeViewController.swift in Sources */,
 				D203ACB31AED6ED9006A08BB /* Cell.swift in Sources */,
 				D294D7B71AF0BD20006165FA /* SRWebClient.swift in Sources */,
 				D203AC7C1AED5417006A08BB /* AppDelegate.swift in Sources */,
@@ -362,10 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BC7AAB1AF0ED6000174D3A /* LoginViewController.swift in Sources */,
+				D2BC7AB41AF1076F00174D3A /* CurrentDealsViewController.swift in Sources */,
 				D203AC921AED5418006A08BB /* Impromptu_BusinessTests.swift in Sources */,
+				D2BC7AAE1AF0F08900174D3A /* RegisterViewController.swift in Sources */,
+				D2BC7AB11AF0F32900174D3A /* HomeViewController.swift in Sources */,
 				D294D7B51AF0AF95006165FA /* CreateProfileViewController.swift in Sources */,
 				D294D7B81AF0BD20006165FA /* SRWebClient.swift in Sources */,
 				D203ACB41AED6ED9006A08BB /* Cell.swift in Sources */,
+				D2BC7AA81AF0DD9000174D3A /* CreateDealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
