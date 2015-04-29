@@ -222,7 +222,7 @@
                     <connections>
                         <segue destination="nPN-Dg-Omi" kind="modal" identifier="homeToCreateDeal" modalTransitionStyle="coverVertical" id="n7l-oq-Rk1"/>
                         <segue destination="9T2-0x-VKh" kind="show" identifier="homeToCurrentDeals" id="Vsi-80-Qf6"/>
-                        <segue destination="SXJ-PP-dZT" kind="push" identifier="logoutFromHome" id="HTE-JW-nq7"/>
+                        <segue destination="SXJ-PP-dZT" kind="show" identifier="logoutFromHome" id="pAz-66-b4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HZ-C7-2zP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1449,7 +1449,7 @@
         <image name="menu_button.png" width="200" height="182"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HTE-JW-nq7"/>
-        <segue reference="YbK-O7-kID"/>
+        <segue reference="pAz-66-b4M"/>
+        <segue reference="fwg-wT-1pi"/>
     </inferredMetricsTieBreakers>
 </document>
